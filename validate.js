@@ -36,7 +36,7 @@ $('button').live('click', function(){
 		return false;
 	}
 
-	// Note: The follow regexp is kinda naive; it's provably impossible to create a regexp
+	// Note: The following regexp is kinda naive; it's provably impossible to create a regexp
 	// that catches all possible email address combinations. This will work for most cases though.
    var reg = new RegExp("^[0-9a-zA-Z]+@[0-9a-zA-Z]+[\.]{1}[0-9a-zA-Z]+[\.]?[0-9a-zA-Z]+$");
    if(!reg.test($('input#email').val()) || $('input#email').val() == "user@example.com") {

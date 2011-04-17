@@ -28,8 +28,14 @@ $user->comments = $_POST["comments"];
 $id = R::store($user);
 
 // Now send the email
-
-$body = "Foo";
+$body = <<<EOF
+   Name: $user->name
+  Email: $user->email
+Address: $user->address
+	
+Your Comments:
+$user->comments
+EOF;
 
 //Create the message
 $message = Swift_Message::newInstance()
