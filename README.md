@@ -9,11 +9,12 @@ PHP 5.3
 
 Setup:
 -----------------
-In MySQL...
+In MySQL...  
+	  
+    	create database pollenizer_test;  
 
-    	create database pollenizer_test;
     	grant all on pollenizer_test.* to 'pollenizer_test'@'localhost' IDENTIFIED BY 'password';
-
+		
 
 You'll then need to copy config.php.default to config.php, and edit that file to enter correct values for your environment.
 
