@@ -22,7 +22,7 @@ $user = R::dispense("user");
 $user->name = $_POST["name"];
 $user->address = $_POST["address"];
 $user->email = $_POST["email"];
-$user->subscribe = (isset($_POST["subscribe"]) ? 1 : 0);
+$user->subscribe = (isset($_POST["subscribed"]) && $_POST["subscribed"] == "Yes" ? 1 : 0);
 $user->comments = $_POST["comments"];
 
 $id = R::store($user);
