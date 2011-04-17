@@ -1,3 +1,10 @@
+<?php
+	$name 		= isset($_GET['name']) ? $_GET['name']: "";
+	$address 	= isset($_GET['address']) ? $_GET['address']: "";
+	$email 		= isset($_GET['email']) ? $_GET['email']: "";
+	$comments 	= isset($_GET['comments']) ? $_GET['comments']: "";
+
+?>
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
         "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
 <html xmlns="http://www.w3.org/1999/xhtml">
@@ -26,16 +33,16 @@
 	<h1>The Form</h1>
 	<form action="process.php" method="POST">
 		<label for="name">Name:</label>
-		<input id="name" name="name" value="<?php echo $_GET['name']; ?>"/>
+		<input id="name" name="name" value="<?php echo $name; ?>"/>
 		<label for="address">Address:</label>
-		<input name="address" value="<?php echo $_GET['address']; ?>"/>
+		<input name="address" value="<?php echo $address; ?>"/>
 		<label for="email">Email:</label>
-		<input id="email" name="email" value="<?php echo $_GET['email']; ?>"/>
+		<input id="email" name="email" value="<?php echo $email; ?>"/>
 
 		<input type="checkbox" name="subscribed" value="1"/>
 		<label for="subscribed">Subscribe to newsletter?</label>
 		
-		<textarea name="comments"></textarea>
+		<textarea name="comments"><?php echo $comments; ?></textarea>
 		
 		<button>Submit</button>
 	</form>

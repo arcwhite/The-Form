@@ -23,4 +23,6 @@ $user->comments = $_POST["comments"];
 $id = R::store($user);
 // Now send the email
 
+header("Location: index.php");
+
 ?>
