@@ -24,7 +24,7 @@
 
 <body>
 	<h1>The Form</h1>
-	<form>
+	<form action="process.php" method="POST">
 		<label for="name">Name:</label>
 		<input id="name" name="name" value="<?php echo $_GET['name']; ?>"/>
 		<label for="address">Address:</label>

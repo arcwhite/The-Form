@@ -8,7 +8,8 @@ $('button').live('click', function(){
 	// that catches all possible email address combinations. This will work for most cases though.
    var reg = new RegExp("^[0-9a-zA-Z]+@[0-9a-zA-Z]+[\.]{1}[0-9a-zA-Z]+[\.]?[0-9a-zA-Z]+$");
    if(!reg.test($('input#email').val())) {
-		alert("Email plz");
+		alert("Your email address appears to be invalid. Please try re-entering it.");
+		return false;
 	}
 	
 });
