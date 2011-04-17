@@ -26,11 +26,11 @@
 	<h1>The Form</h1>
 	<form>
 		<label for="name">Name:</label>
-		<input name="name"/>
+		<input id="name" name="name" value="<?php echo $_GET['name']; ?>"/>
 		<label for="address">Address:</label>
-		<input name="address"/>
+		<input name="address" value="<?php echo $_GET['address']; ?>"/>
 		<label for="email">Email:</label>
-		<input name="email"/>
+		<input id="email" name="email" value="<?php echo $_GET['email']; ?>"/>
 
 		<input type="checkbox" name="subscribed" value="1"/>
 		<label for="subscribed">Subscribe to newsletter?</label>
