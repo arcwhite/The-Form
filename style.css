@@ -1,0 +1,44 @@
+div.main {
+	width: 640px;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+div.main h1 {
+	text-align: center;
+	font-family: "Helvetica", "Verdana", sans-serif;
+}
+
+form {
+	margin: 0 0 10px 160px;
+}
+
+input, textarea, select {
+	display: block;
+	width: 200px;
+}
+
+input.radio {
+	width: 15px;
+}
+
+input.radio {
+	display: inline;
+}
+
+label {
+	font-weight: bold;
+	text-align: right;
+	line-height: 1.1;
+	margin: 5px 20px 0 -160px;
+	width: 140px;
+	float: left;
+}
+
+button {
+	position: absolute;
+	left: 570px;
+	display: block;
+	margin-top: 20px;
+	
+}
