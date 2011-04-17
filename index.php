@@ -32,16 +32,16 @@
 	<h1>The Form</h1>
 	<form action="process.php" method="POST">
 		<label for="name">Name:</label>
-		<input id="name" name="name" value="<?php echo $name; ?>"/>
+		<input class="placeholder" rel="Your Name" id="name" name="name" value="<?php echo $name; ?>"/>
 		<label for="address">Address:</label>
-		<input name="address" value="<?php echo $address; ?>"/>
+		<input class="placeholder" rel="Your Address" name="address" value="<?php echo $address; ?>"/>
 		<label for="email">Email:</label>
-		<input id="email" name="email" value="<?php echo $email; ?>"/>
+		<input class="placeholder" rel="user@example.com" id="email" name="email" value="<?php echo $email; ?>"/>
 
 		<input type="checkbox" name="subscribed" value="1"/>
 		<label for="subscribed">Subscribe to newsletter?</label>
 		
-		<textarea name="comments"><?php echo $comments; ?></textarea>
+		<textarea name="comments" class="placeholder" rel="Comments?"><?php echo $comments; ?></textarea>
 		
 		<button>Submit</button>
 	</form>
