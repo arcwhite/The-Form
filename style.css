@@ -16,6 +16,7 @@ form {
 input, textarea, select {
 	display: block;
 	width: 200px;
+	line-height: 1.1em;
 }
 
 input.radio {
@@ -29,7 +30,7 @@ input.radio {
 label {
 	font-weight: bold;
 	text-align: right;
-	line-height: 1.1;
+	line-height: 1.1em;
 	margin: 5px 20px 0 -160px;
 	width: 140px;
 	float: left;
