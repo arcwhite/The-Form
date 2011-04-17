@@ -3,7 +3,6 @@
 	$address 	= isset($_GET['address']) ? $_GET['address']: "";
 	$email 		= isset($_GET['email']) ? $_GET['email']: "";
 	$comments 	= isset($_GET['comments']) ? $_GET['comments']: "";
-
 ?>
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
         "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
