@@ -10,6 +10,11 @@ require("Swift-4.0.6/lib/swift_required.php");
 
 // Server-side Validate
 
+if(!isset($_POST["email"]) || !isset($_POST["name"]) ) {
+	// Throw back to the form with an error message displayed
+	// Also check email format
+}
+
 // Activate RedBean
 R::setup("mysql:host=".MYSQL_HOST.";dbname=".MYSQL_DB, MYSQL_USER, MYSQL_PASS);
 
